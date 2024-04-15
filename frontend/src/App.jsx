@@ -8,7 +8,7 @@ import { Toaster } from "react-hot-toast";
 import Header from "./components/ui/Header";
 
 function App() {
-  const authUser = false;
+  const authUser = true;
   return (
     <>
       {authUser && <Header />}
