@@ -5,11 +5,13 @@ import SignUpPage from "./pages/SignUpPage";
 import TransactionPage from "./pages/TransactionPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import { Toaster } from "react-hot-toast";
+import Header from "./components/ui/Header";
 
 function App() {
-
+  const authUser = true;
   return (
     <>
+      {authUser && <Header />}
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/login' element={<LoginPage />} />
