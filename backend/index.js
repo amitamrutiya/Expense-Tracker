@@ -17,9 +17,13 @@ import mergedTypeDefs from "./typeDefs/index.js";
 
 import { connectDB } from "./db/connectDB.js";
 import { configurePassport } from "./passport/passport.config.js";
+import job from "./cron.js";
 
 configurePassport();
 
+job.start();
+
+const __dirname = path.resolve();
 const app = express();
 
 const httpServer = http.createServer(app);
@@ -74,8 +78,16 @@ app.use(
   })
 );
 
+// npm run build will build your frontend app, and it will the optimized version of your app
+app.use(express.static(path.join(__dirname, "frontend/dist")));
+
+app.get("*", (req, res) => {
+	res.sendFile(path.join(__dirname, "frontend/dist", "index.html"));
+});
+
+
 // Modified server startup
-await new Promise((resolve) => httpServer.listen({ port: 8000 }, resolve));
+await new Promise((resolve) => httpServer.listen({ port: 4000 }, resolve));
 await connectDB();
 
-console.log(`🚀 Server ready at http://localhost:8000/graphql`);
+console.log(`🚀 Server ready at http://localhost:4000/graphql`);
