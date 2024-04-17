@@ -1,6 +1,6 @@
 # GraphQL Crash Course - Build an Expense Tracker App [Live](https://expense-tracker-pur1.onrender.com/)
 
-![Demo App](https://i.ibb.co/ygxgbNm/Screenshot-11.png)
+![Screenshot-11](https://github.com/amitamrutiya2210/Expense-Tracker/assets/91112485/865ad558-3f15-4adc-9ba5-2822d305ad30)
 
 Welcome to the MERN GraphQL Expense Tracker App! This project is designed to help you manage your expenses efficiently using a modern tech stack and GraphQL.
 
