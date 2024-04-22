@@ -1,4 +1,4 @@
-# GraphQL Crash Course - Build an Expense Tracker App [Live](https://expense-tracker-pur1.onrender.com/)
+#Expense Tracker App [Live](https://expense-tracker-pur1.onrender.com/)
 
 ![Screenshot-11](https://github.com/amitamrutiya2210/Expense-Tracker/assets/91112485/865ad558-3f15-4adc-9ba5-2822d305ad30)
 
