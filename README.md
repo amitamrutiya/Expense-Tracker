@@ -13,7 +13,6 @@ Welcome to the MERN GraphQL Expense Tracker App! This project is designed to hel
 -   🚀 Global state management with Apollo Client
 -   🐞 Error handling both on the server and on the client
 -   ⭐ Deployment made easy with a platform called Render
--   👾 Cron jobs for scheduled tasks and automation
 -   ⏳ And much more!
 
 ### Setup .env file
